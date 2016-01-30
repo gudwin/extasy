@@ -1,0 +1,14 @@
+.sitemap-once label {
+	font-weight:bold;
+	margin-right:3px; 
+}
+.sitemap-once .clear { 
+	margin-left:10px;
+}
+.sitemap-once span {
+	font-weight:bold; 
+}
+.sitemap-once .address { 
+	margin-top:10px;
+	margin-left:4em;
+}

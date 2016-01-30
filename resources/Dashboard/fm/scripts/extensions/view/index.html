@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Переход на главную страницу сайта нажатием клавиши "L"</title>
+<script language="JavaScript1.2"><!--//
+self.focus();
+var travel=true
+var hotkey=114
+var destination="http://scriptic.ru"
+if (document.layers)
+document.captureEvents(Event.KEYPRESS)
+function backhome(e){
+	if (document.layers){
+		if (e.which==hotkey&&travel)
+			window.location=destination
+	}
+	else if (document.all){
+		if (event.keyCode==hotkey)
+			window.location=destination
+	}
+	return false;
+}
+document.onkeypress=backhome
+
+//--></script>
+</head>
+<body>
+Для перехода на главную страницу сайта нажмите клавишу "L" .
+</body>
+</html>

@@ -1,0 +1,39 @@
+<div ng-show="status == 0">
+    <div class="well" >
+        Статус сервера: <span class="text-danger">Остановлен</span>
+        <button class="btn btn-success" ng-click="toggleServer( 1 )">Запустить</button>
+        <button class="btn btn-primary" ng-click="restartServer( )">Перезагрузить</button>
+    </div>
+</div>
+<div ng-show="status == 1">
+    <div class="well" >
+        Статус сервера: <span class="text-success">Работает</span>
+        <button class="btn btn-danger" ng-click="toggleServer( 0 )">Остановить</button>
+        <button class="btn btn-primary" ng-click="restartServer( )">Перезагрузить</button>
+    </div>
+</div>
+
+<div class="responsible-table">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Задача</th>
+                <th>Хеш</th>
+                <th>Статус</th>
+                <th>Время активации</th>
+                <th>Создано</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in latests">
+                <td>{{row.id}}</td>
+                <td><a href ng-href="#/restart/{{row.id}}">{{row.class}}</a></td>
+                <td>{{row.hash}}</td>
+                <td status-description ng-model="row.status"></td>
+                <td>{{row.actionDate}}</td>
+                <td>{{row.dateCreated}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

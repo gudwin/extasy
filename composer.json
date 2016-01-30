@@ -1,0 +1,22 @@
+{
+  "name": "gudwin/extasy",
+  "description": "PHP Framework",
+  "require": {
+    "phpunit/phpunit": "4.8.21",
+    "itlessons/php-social" : "0.0.1",
+    "facebook/php-sdk-v4" : "4.0.23"
+  },
+  "authors": [
+    {
+      "name": "Dmitry Shevchenko",
+      "email": "dmitry@dd-team.org"
+    }
+  ],
+  "minimum-stability": "stable",
+  "config": {
+    "bin-dir": "bin/"
+  },
+  "autoload": {
+  }
+}
+

@@ -1,0 +1,65 @@
+body, table,td,input,select,textarea {
+	font-size: 11px;
+	font-family:Verdana, Helvetica, Arial;
+	color:#000000;
+}
+
+td.black {background-color:#000000;}
+td.white {background-color:#FFFFFF;}
+
+td.menu1 {background-color:#9999FF;}
+td.menu2 {background-color:#AFAFFF;}
+td.menu3 {background-color:#C8C8FF;}
+
+td.main1 {background-color:#FFCC33;}
+td.main2 {background-color:#FFFF66;}
+
+td.error1 {background-color:#CCCCFF;}
+td.error2 {background-color:#FF6633;}
+
+a {
+	font-size: 11px;
+	font-family:Verdana, Helvetica, Arial;
+	color:#6666FF;
+	text-decoration:none;
+}
+a:hover {text-decoration:underline}
+
+a.menu {
+	font-size: 11px;
+	font-family:Verdana, Helvetica, Arial;
+	color:#000000;
+	text-decoration:none;
+}
+a.menu:hover {text-decoration:underline;}
+
+.main {color:#FF9900;}
+
+.td2 {background-color: #FFFFFF;}
+.td1 {background-color: #FFFFCC;}
+
+.text {
+	color: #000000;
+	border-style: inset;
+	border-width: 1px;
+	border-color: #000000;
+	background-color: #FFFFFF;
+}
+
+.button {
+	color: #000000;
+	border-style: inset;
+	border-width: 1px;
+	border-color: #000000;
+	background-color: #AFAFFF;
+	cursor: hand;
+}
+
+.button2 {
+	color: #000000;
+	border-style: inset;
+	border-width: 1px;
+	border-color: #000000;
+	background-color: #C8C8FF;
+	cursor: hand;
+}

@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+.double_link, .rename_link { 
+	color: #919191;
+	font: 12px Arial;
+	margin-left:16px;
+}
+.autosized-field { 
+	padding: 1px 3px 1px 3px;
+}
+.property {
+	color: #919191;
+}
+#tabCnt a.property {
+	color: #919191;
+}

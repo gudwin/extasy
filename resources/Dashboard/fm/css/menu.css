@@ -1,0 +1,5 @@
+body,td { font-family: Tahoma; font-size: 11px; color: #000000; }
+a:link,a:visited,a:active { color: #336699; text-decoration: none; }
+a:hover { color: #336699; text-decoration: underline; }
+div { padding-top: 2px }
+.pad { padding: 2px; }

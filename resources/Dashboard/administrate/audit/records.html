@@ -1,0 +1,36 @@
+
+<div class="records-list">
+    <ul class="pagination">
+        <li ng-class="{disabled: paging.page <= 0}"><a href ng-click="setPage( paging.page - 1)">&laquo;</a></li>
+        <li ng-repeat="i in range()" ng-class="{active: i == paging.page}"><a href ng-click="setPage( i )">{{i + 1}}</a></li>
+        <li ng-class="{disabled: paging.page >= paging.pageCount - 1}"><a href ng-click="setPage( paging.page + 1 )">&raquo;</a></li>
+    </ul>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th style="width:5%"><a href ng-click="setSortBy('id')">ID<span class="order_move_up" ng-if="searchRequest.sort_by == 'id' && searchRequest.order == 'desc'"><!-- --></span><span class="order_move_down" ng-if="searchRequest.sort_by == 'id' && searchRequest.order == 'asc'"><!-- --></span></a></th>
+            <th style="width:10%"><a href  ng-click="setSortBy('date')">Дата <span class="order_move_up" ng-if="searchRequest.sort_by == 'date' && searchRequest.order == 'desc'"><!-- --></span><span class="order_move_down" ng-if="searchRequest.sort_by == 'date' && searchRequest.order == 'asc'"><!-- --></span></a></th>
+            <th style="width:10%"><a href ng-click="setSortBy('event')">Событие <span class="order_move_up" ng-if="searchRequest.sort_by == 'event' && searchRequest.order == 'desc'"><!-- --></span><span class="order_move_down" ng-if="searchRequest.sort_by == 'event' && searchRequest.order == 'asc'"></span></a></th>
+            <th style="width:10%">Пользователь</th>
+            <th style="width:10%"><a href ng-click="setSortBy('ip')">IP <span class="order_move_up" ng-if="searchRequest.sort_by == 'ip' && searchRequest.order == 'desc'"><!-- --></span><span class="order_move_down" ng-if="searchRequest.sort_by == 'ip' && searchRequest.order == 'asc'"></span></a></th>
+            <th style="width:55%">Превью</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="row in list" ng-class="{new:row.viewed == false}">
+            <td>{{row.id}}</td>
+            <td>{{row.date}}</td>
+            <td>{{row.event}}</td>
+            <td>{{row.user_login}}</td>
+            <td>{{row.ip}}</td>
+            <td ng-show="row.shortVariant"><div ng-bind-html="row.short"></div> <a ng-click="showExtended( row ) " href="#/records">Подробнее</a></td>
+            <td ng-show="!row.shortVariant" ng-bind-html="row.full"></td>
+        </tr>
+        </tbody>
+    </table>
+    <ul class="pagination">
+        <li ng-class="{disabled: paging.page <= 0}"><a href ng-click="setPage( paging.page - 1)">&laquo;</a></li>
+        <li ng-repeat="i in range()" ng-class="{active: i == paging.page}"><a href ng-click="setPage( i )">{{i + 1}}</a></li>
+        <li ng-class="{disabled: paging.page >= paging.pageCount - 1}"><a href ng-click="setPage( paging.page + 1 )">&raquo;</a></li>
+    </ul>
+</div>

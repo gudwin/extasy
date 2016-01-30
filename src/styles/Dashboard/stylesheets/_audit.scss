@@ -1,0 +1,33 @@
+.audit  {
+	.records-list.view-frame  {
+		table.table {
+			min-height:300px;
+		}
+	}
+	.order_move_down {
+		background-repeat:no-repeat;
+		background-image:inline-image("col-move-bottom.gif", unquote('image/gif'));
+	}
+	.order_move_up {
+	background-repeat:no-repeat;
+		background-image:inline-image("col-move-top.gif", unquote('image/gif'))
+	}
+	.row {
+
+		.yes {
+			color : red;
+		}
+	}
+	.table {
+		.order_move_down, .order_move_up {
+			width: 9px;
+			height:9px;
+			display:inline-block;
+		}
+	}
+  .new {
+    td {
+      font-weight:bold;
+    }
+  }
+}

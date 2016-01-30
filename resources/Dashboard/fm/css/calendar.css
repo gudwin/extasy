@@ -1,0 +1,7 @@
+.calendar_inp{ background: #FFFFFF; border: #A5ACB2 1px solid; padding-left: 5px; }
+.calendar_td_cur { background-color: #FB5239; cursor: hand; cursor: pointer; }
+.calendar_td_empty { background-color: White; }
+.calendar_td1 { background-color: #FEFA63; cursor: hand; cursor: pointer; }
+.calendar_td2 { background-color: #F2F1F3; cursor: hand; cursor: pointer; }
+.calndar_tbl { font: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12px; }
+

@@ -1,0 +1,5 @@
+.x-icon-text { background-repeat: no-repeat; padding-left: 20px; }
+.icon-status-ok { background-image: url(../../icons/fam/accept.png) !important; }
+.icon-status-error { background-image: url(../../icons/fam/error.png) !important; }
+.icon-status-notice { background-image: url(../../icons/fam/information.png) !important; }
+

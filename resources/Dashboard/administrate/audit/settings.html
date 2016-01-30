@@ -1,0 +1,17 @@
+<div class="settings col-md-6">
+    <form role="form" ng-submit="submit()" >
+        <div class="form-group">
+            <label for="auditSettingsEmail">Email адреса для оповещения о возникновении критичных событий аудита(разделитель запятая)</label>
+            <input type="text" class="form-control" id="auditSettingsEmail" placeholder="Enter emails" ng-model="settings.notification_emails">
+        </div>
+        <div class="form-group">
+            <label for="auditLogsMaximumLength">Максимальная длина журнала аудита. При превышении, архив начнет архивироваться</label>
+            <input type="text" class="form-control" id="auditLogsMaximumLength" placeholder="65536" ng-model="settings.maximumLogLength">
+        </div>
+        <button type="submit" class="btn btn-default">Сохранить</button>
+    </form>
+    <h5>Очистка истории</h5>
+    <div>
+        <button class="btn btn-warning" ng-click="clearHistory()">Очистить</button>
+    </div>
+</div>

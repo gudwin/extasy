@@ -1,0 +1,26 @@
+<div class="event-list">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th style="width:30%"><span>Событие</span></th>
+            <th style="width:50%"><span>Описание</span></th>
+            <th style="width:10%"><span>Критичное?</span></th>
+            <th style="width:10%"><span>Логировать сообщения</span></th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in events">
+                <td><b>{{row.name}}</b></td>
+                <td>{{row.description}}</td>
+                <td><select ng-change="setupPriority( row.name, row.critical)" ng-model="row.critical">
+                    <option ng-selected="row.critical == true" value="true">Критично, отсылать e-mail</option>
+                    <option ng-selected="row.critical == false" value="false">Не критично</option>
+                </select></td>
+                <td><select ng-change="setupLogging( row.name, row.enable_logging)" ng-model="row.enable_logging">
+                    <option ng-selected="row.enable_logging == true" value="true">Логировать</option>
+                    <option ng-selected="row.enable_logging == false" value="false">Не логировать</option>
+                </select></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

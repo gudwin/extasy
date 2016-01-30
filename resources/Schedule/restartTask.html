@@ -1,0 +1,24 @@
+<ol class="breadcrumb">
+    <li><a href="#/latests">Очередь</a></li>
+    <li class="active">Перезагрузка задачи {{class}}</li>
+</ol>
+<form name="restartTaskForm">
+
+    <div class="form-group">
+        <label for="inputActionDate">Новая дата активации</label>
+        <input type="text"
+               class="form-control"
+               id="inputActionDate"
+               placeholder="Дата в формате yyyy-mm-dd hh:mm:ss"
+               ng-model="form.actionDate"
+               datetime-format
+               required
+                />
+        <label ng-show="addTaskForm.actionDate.$error.required" class="text-danger">Обязательное поле</label>
+        <label ng-show="addTaskForm.actionDate.$error.datetimeFormat" class="text-danger">Формат даты yyyy-mm-dd hh:mm:ss</label>
+    </div>
+
+    <button type="submit" class="btn btn-default" ng-disabled="!restartTaskForm.$valid" ng-click="submit()">Рестартовать</button>
+    <button type="submit" class="btn btn-danger" ng-click="cancel()">Отменить задачу</button>
+    <button type="submit" class="btn btn-link" ng-click="back()">Назад</button>
+</form>

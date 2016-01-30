@@ -1,0 +1,21 @@
+.confirmationCodeForm {
+  .statusRow {
+    float:left;
+    clear:left;
+    width: 200px;
+    margin-bottom: 4px;
+    input {
+      margin: 0 4px;
+
+
+    }
+  }
+  .activationCodeRow  {
+    width: 400px;
+    float:left;
+    input {
+      width : 219px;
+    }
+  }
+
+}

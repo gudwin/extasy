@@ -1,0 +1,141 @@
+.ExtasyDataBlock {
+	display: none;
+}
+a.cms_help {
+
+	margin-left:5px;
+}
+/*a.cms_help div {
+	display:none;
+}*
+/*a.cms_help:hover div {*/
+div.showToolTip {
+	z-index:10001 !important;
+	display:block;
+	background-color:#DDDD55;
+	color:green;
+	border-style:solid;
+	border-width:thin;
+	border-color:#333333;
+	padding:5px;
+}
+div.hideToolTip {
+	display:none;
+}
+div.errorList {
+	background-color:#FFFF77;
+
+	padding:5px;
+	border-color:red;
+	border-style:solid;
+}
+div.errorList div.errorMessage {
+	color:#FF1111;
+	font-size:125%;
+	border-bottom-style:solid;
+	border-bottom-color:#5555FF;
+}
+div.contentText a {
+	color:#0000FF;
+	text-decoration:underline;
+}
+.big {
+	font-size:125%;
+}
+.important {
+	color: #FF1111;
+}
+#admin_home_link img{
+	margin-top:3px;
+	float:left;
+}
+
+h3.message {
+	font-size:125%;
+}
+h3.message span {
+	text-decoration:underline;
+}
+
+/**
+ *  phpSource
+ */
+.phpSource { 
+	width:100%;
+	height:420px;
+}
+
+.phpSource textarea { 
+	width:100%;
+	height:400px;
+	font-size:12px;
+}
+.phpSource .operations { 
+	list-style-type : none;
+	display:block;
+	width:100%;
+	background-color:#EAEAEA;
+	height:16px;
+}
+.phpSource .operations li{ 
+	float:left;
+	margin-right:10px;
+}
+.phpSource .operations li.status {
+	color:red;
+	font-size:12px;
+}
+.phpSource .CodeMirror-wrapping {	
+	border: solid 1px #EAEAEA;
+}
+/*
+/////////////////////////////////////////////////////////////////
+// Секция сообщения
+*/
+#extcms-msg {
+	left				: 50%;
+	margin				: 10px 0px 0px -150px;
+	min-height			: 120px;
+	position			: absolute;
+	top					: 20px;
+	width				: 300px;
+	z-index				: 100;
+	border-radius		: 20px;
+	border				: 2px solid #fff;
+	background			: #EBF4FB;
+
+}
+#extcms-msg.error {
+     	background-color:	#FF7;
+    }
+
+#extcms-msg .extcms-msg {
+	margin				: 20px 20px 0px 20px;
+}
+#extcms-msg .extcms-msg .inner {
+	font				: 14px Georgia;
+	color				: #999;
+	text-align			: center;
+}
+#extcms-msg .extcms-msg .inner h3 {
+	font				: 18px Georgia;
+	color				: #999;	
+}
+#extcms-msg .autoclose {
+	position			: absolute;
+	left				: 16px;
+	bottom				: 16px;
+}
+#extcms-msg .autoclose label {
+	margin-left			: 5px;
+	color				: #999;
+	line-height			: 13px;
+	font				: 12px Georgia;
+}
+#extcms-msg .close {
+	color				: #ff0000;
+	font				: 12px Georgia;
+	position			: absolute;
+	right				: 10px;
+	top					: 10px;
+}

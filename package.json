@@ -1,0 +1,27 @@
+{
+  "name": "Extasy",
+  "version": "4.5.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-phpunit": "*",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-text-replace": "^0.3.12",
+    "grunt-bg-shell" : "*",
+    "karma": "*",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "*",
+    "http-server": "^0.6.1",
+    "shelljs": "^0.2.6",
+    "jasmine-jquery" : "*"
+  },
+    "scripts": {
+        "start": "http-server -a 0.0.0.0 -p 8000",
+        "test": "node node_modules/karma/bin/karma start resources/test/karma.conf.js",
+        "test-single-run": "node node_modules/karma/bin/karma start resources/test/karma.conf.js  --single-run",
+        "preupdate-webdriver": "npm install",
+        "update-webdriver": "webdriver-manager update"
+    }
+
+}

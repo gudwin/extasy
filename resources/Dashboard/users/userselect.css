@@ -1,0 +1,15 @@
+.user-select .title {
+    width:200px;
+}.user-select .status {
+     width:170px;
+     padding-left:30px;
+     height:20px;
+     line-height:20px;
+ }
+
+.user-select .status.found {
+    background-image:url(../../../extasy/pic/buttons/save.gif);
+}
+.user-select .status.not-found {
+    background-image:url(../../../extasy/pic/buttons/reset.gif);
+}

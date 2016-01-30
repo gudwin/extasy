@@ -1,0 +1,11 @@
+AddDefaultCharset utf-8
+
+RewriteEngine On
+RewriteBase /
+
+DirectoryIndex cms.php
+
+RewriteCond %{IS_SUBREQ} =false
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ cms.php [L,QSA]

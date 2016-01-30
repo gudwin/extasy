@@ -1,0 +1,47 @@
+body,td { color: #000000; font-family: Tahoma; font-size: 11px; }
+td.target { background-color: #FFF6B8; font-weight: bold; }
+a { color: #336699; font-family: Tahoma; font-size: 11px; font-weight: bold; text-decoration: underline; }
+a:hover { color: #336699; font-family: Tahoma; font-size: 11px; font-weight: bold; text-decoration: none; }
+.inp { background-color: #F2F2F2; color: #000000; font-family: Tahoma; font-size: 11px; width: 196px; }
+select, textarea { color: #000000; font-family: Tahoma; font-size: 11px; }
+.submit60 { background-image: url(../img/main/b_empty60.gif); width: 60px; height: 21px; border: 0px; font-weight: 700; background-color: transparent; color: #336699; font-family: Tahoma; font-size: 11px; cursor: hand; }
+.submit100 { background-image: url(../img/main/b_empty110.gif); width: 110px; height: 21px; border: 0px; font-weight: 700; background-color: transparent; color: #336699; font-family: Tahoma; font-size: 11px; cursor: hand;  }
+
+.location { color: #848484; font-weight: bold; padding-bottom: 7px; }
+
+.menu { color: #336699; font-size: 10px; font-weight: bold; padding-left: 10px; padding-right: 10px; }
+
+a.menu2:link, a.menu2:active, a.menu2: visited { color: #336699; font-weight: bold; font-size: 12px; text-decoration: none; }
+
+a.cp_submenu:link, a.cp_submenu:active, a.cp_submenu:visited { color: #336699; font-family: Tahoma; font-size: 11px; font-weight: bold; text-decoration: none; }
+a.cp_submenu:hover { color: #336699; font-family: Tahoma; font-size: 11px; font-weight: bold; text-decoration: underline; }
+
+.sml {font-size:10px; color:#666666}
+.menu_cur{ color: #336699; font-weight: bold; padding-left: 3px; padding-right: 3px; }
+.menu2_header { color: #FFFFFF; font-family: Tahoma; font-size: 12px; font-weight: bold; padding-left: 10px; }
+.page_a{ color: #FFFFFF; font-weight: bold; text-decoration: none; background-color: #474747; }
+.page_b{ font-weight: bold; background-color: #045E8C; }
+.page_n{ color: #FFFFFF; text-decoration: none; }
+.page_n:hover { color: #FFFFCC; text-decoration: none; }
+.small_link{ color: #1862D2; font-family: Verdana, sans-serif; font-size: 10px; text-decoration: underline; }
+.small_link:hover { color: #1862D2; font-family: Verdana, sans-serif; font-size: 10px; text-decoration: none; }
+.td_cap{ background-image: url(../img/main/bg_fb.gif); font-weight: bold; height: 26px; padding-left: 5; }
+.td_caption{ color: #FFFFFF; font-size: 11px; font-weight: bold; height: 25px; }
+.td_chk{ background-color: #E3F5FF; }
+.td_fb{ background-image: url(../img/main/bg_fb.gif); height: 26px; padding-left: 5; }
+.td_fl{ background-color: #f0f0f0; height: 25px; padding:5; }
+.td_footer{ background-image: url(../img/main/bg_footer.gif); height: 26px; padding-left: 5; }
+.td_form { background: #E3F5FF; height: 25px; padding-left: 5; }
+.td_fr{ background-color: #FFFFFF; height: 25px; padding : 5; }
+.td_main { background: #FFFFFF; height: 25px; padding-left: 5; }
+.td_bigfont { font-size: 12px; }
+.kal{ background: #fafafa; color: #3b7575; font-size: 10px; height: 18px; text-align: center; }
+.kalactive{ background: #86bfbf; color: #ffffff; font-size: 10px; font-weight: bold; height: 18px; text-align: center; }
+.kalday{ color: #ffffff; font-weight: bold; height: 18px; text-align: center; }
+.kalnoactive{ color: #999999; font-size: 10px; height: 18px; text-align: center; }
+.kalwd { background-color: #F0F0F0;  text-align: center; width: 20px; height: 22px; }
+.kaldt { background-image: url(../img/main/bg_footer.gif); height: 26px; }
+.help { color: #999999; font-size: 14px; font-weight: bold; }
+#hand{ cursor: pointer; }
+#hand{ cursor: hand; }
+#wt { color: #FFFFFF; font-weight: 100; }

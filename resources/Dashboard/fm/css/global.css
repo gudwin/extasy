@@ -1,0 +1,99 @@
+
+html, body {height:100%}
+*, body {padding:0; margin:0;}
+body {font:12px Tahoma, sans-serif; color:#717171; background-color:#F7F7FF;}
+a img {border:none}
+a:hover {text-decoration:none}
+.clear {height:0; clear:both}
+.orange {color:#D2881C;}
+.green {color:#008000;}
+.gray {color:#919191;}
+
+#main {min-width:780px; width:expression((documentElement.clientWidth||document.body.clientWidth)<780?'780px':'100%');}
+#main {height:"100%"; min-height:100%; margin-bottom:-15px; background:url(i/left.gif) repeat-y;}
+html>body #main {height:auto;}
+/*body:not([dummy]) #main {height:200% !important;}*/
+
+#header {height:129px; background: url(../img/headerBg.gif) repeat-x; position:relative;}
+#header #logo {background: url(../img/logo.gif) no-repeat; width:295px; height:111px}
+#header #control {height:111px; position:absolute; top:0; left:50%; background: url(../img/controlPanelBg.gif) repeat-x; width:50%}
+#header #control #top {height:40px; background: url(../img/controlPanelLeftBg.gif) no-repeat; margin-bottom:32px}
+#header #control #top a {display:block; padding:15px 0 0 25px; color:#D1871C; font:bold 12px Tahoma, sans-serif; float:left}
+#header #control #top p {color:#DFDFDF; font:11px Tahoma, sans-serif; float:left; padding:6px 0 6px 20px; border-left:1px solid #747476; margin:10px 0 0 20px}
+#header #control img {margin-left:26px}
+#header #control img.second {margin-left:15px}
+
+#modulesMenu {margin-bottom:1px; height:25px; background-color:#494949; padding:0 30px; position:relative; z-index:0}
+#modulesMenu .text {list-style-type:none; padding:0 10px; padding-left:"0px"; padding-right:"0px"; margin:0px 10px; float:left; color:#fff; background-color:transparent; border:none; border-left:1px solid #919199; border-right:1px solid #919199; margin-top:-2px; margin-top:"-4px"; position:relative; z-index:0; cursor:hand !important}
+#modulesMenu li {list-style-type:none; padding:0 20px; float:left}
+#modulesMenu li a {color:#fff; text-decoration:none;}
+#modulesMenu li a:hover {color:#C9C9C9;}
+	
+#left {float:left; width:219px; width:"230px"; background: #919199 url(../img/menuBg.gif) bottom no-repeat; padding:0 11px 45px 0;}
+html>body #left {position:relative; z-index:0 !important}
+#left a:hover {text-decoration:underline !important}
+#left h1 {background:#191919 url(../img/menuH1Bg.gif) bottom right no-repeat; height:20px; height:"50px"; color:#fff; font:bold 14px Arial; padding:30px 0 0 40px;}
+#left ul li {border-bottom:1px solid #79797F; list-style-type:none;}
+#left ul li.active {border-bottom:none; list-style-type:none; background-color:Lightslategray}
+#left ul li a.firstLevel {font:bold 12px Tahoma; color:#fff; text-decoration:none; margin:7px 0 3px 40px; margin-left:20px; display:block; float:left;}
+html>body #left ul li a.firstLevel {margin-left:40px;}
+body:not([dummy]) #left ul li a.firstLevel {margin-left:40px;}
+#left #sub {background: #4F4F51 url(../img/subMenuBg.gif) bottom no-repeat; padding:5px 10px 5px 40px; margin:4px 0}
+#left #sub li {border:none; background: url(../img/menuSubArrow.gif) 0px 8px no-repeat; padding:3px 0px}
+#left #sub li a {color:#fff; margin-left:14px; font:12px Tahoma, sans-serif; text-decoration:none}
+#left #sub li ul {padding:6px 0 0px 0;}
+#left #sub li ul li {border:none; background: url(../img/menuSubArrowOrange.gif) 0px 8px no-repeat; padding:3px 0 3px 0; margin-left:16px}
+#left #sub li ul li a {color:#F2C077; margin-left:14px; font:12px Tahoma, sans-serif; text-decoration:none}
+/*Gisma modifications*/
+#left #sub li.active {border:none; background-color:Lightslategray; padding:3px 0px}
+
+#container {width:100%; float:right; margin-left:-230px; }
+#container #center {margin-left:230px; padding:28px 30px 30px 40px}
+#container #center h1 {font:bold 16px Arial, sans-serif; color:#494949; margin-bottom:25px}
+#container #center p.akcent {font-weight:bold; color:#494949; margin-top:15px}
+#container #center p.akcent a {font-weight:bold; color:#EE991C;}
+
+
+#container #topBlock {background-color:#4F4F51; padding:12px 10px 8px 10px;}
+#container #topBlock .sbm {background-color:#919199; padding:1px 6px 1px 6px; color:#fff; margin:1px;border:none; font-size:11px; cursor:hand}
+#container #topBlock a {color: orange; }
+
+#container #center h2 {font:bold 13px Arial; color:#fff; background-color:#4F4F51; padding:10px 10px 6px 10px; border-bottom:1px solid #808086}
+#container #center #topBlock {background-color:#4F4F51; padding:12px 10px 8px 10px;}
+#container #center #topBlock .sbm {background-color:#919199; padding:1px 6px 1px 6px; color:#fff; border:none; font-size:11px; cursor:hand}
+#container #center #tableTop {background-color:#4F4F51; margin-top:10px}
+#container #center #tableTop td {border-left:1px solid #808086; padding:1px; color:#fff; font-weight:bold; font-size:12px}
+#container #center #tableRow {background-color:#BBBBC2}
+#container #center #tableRow #rowTop {background-color:#4F4F51; height:30px;}
+#container #center #tableRow #rowTop td {border-left:1px solid #808086; padding:1px; color:#fff; font-weight:bold; font-size:12px}
+#container #center #tableRow .sbm {background-color:#919199; padding:1px 6px 1px 6px; color:#fff; border:none; font-size:11px; cursor:hand}
+#container #center #tableRow td {border-right:1px solid #808086; padding:1px; color:#191919; font-size:12px; border-bottom:1px solid #808086}
+#container #center #tableRow td.list {border-right:1px solid #808086; padding:5px; color:#191919; font-size:12px; border-bottom:1px solid #808086}
+#container #center #tableRow td.last {border-right:none}
+#container #center #tableRow td.smallPad {padding:2px 9px;}
+#container #center #tableRow td.secondaryLevel {padding:2px 9px; padding-left:50px !important;}
+#container #center #tableRow select {width:225px; font-size:12px; color:#919191; }
+#container #center #tableRow textarea {color:#919191; width:225px; height:120px; font-size:12px; padding:4px 2px 0 2px}
+#container #center #tableRow .bigInput {width:225px; color:#919191;}
+#container #center #tableRow .smallInput {width:60px; color:#919191; font-size:12px}
+#container #center #bottomBlock {background-color:#4F4F51; padding:12px 10px 8px 10px; margin-top:13px}
+#container #center #bottomBlock .sbm {background-color:#919199; padding:1px 6px 1px 6px; color:#fff; border:none; font-size:11px; cursor:hand}
+
+/* forms */
+.bigInput {width:225px; color:#919191; height:24px; font-size:12px; padding:4px 2px 0 2px}
+body:not([dummy]) .bigInput {width:221px; color:#919191; height:18px; font-size:12px; padding:4px 2px 0 2px}
+.smallInput {width:60px; color:#919191; height:24px; font-size:12px; padding:4px 2px 0 2px}
+body:not([dummy]) .smallInput {width:56px; color:#919191; height:18px; font-size:12px; padding:4px 2px 0 2px}
+.bigTextArea {width:440px !important; height:420px !important}
+.veryBigInput {width:440px !important;}
+
+#bottomBlock .bigInput {margin-right:6px}
+#bottomBlock select {width:225px; margin-right:6px}
+#bottomBlock option.gray {color:#A5A5A5;}
+
+
+#footer {height:15px; background: url(../img/footerBg.gif) repeat-x; clear:both}
+#footer {min-width:780px; width:expression((documentElement.clientWidth||document.body.clientWidth)<780?'780px':'100%');}
+
+
+

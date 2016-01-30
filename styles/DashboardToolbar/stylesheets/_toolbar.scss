@@ -1,0 +1,87 @@
+.DashboardMenu {
+	position : absolute;
+	left : 0px;
+	top:0px;
+	width:100%;
+
+	nav {
+		.navbar-inner { 
+            a  {
+              font-size:100%;
+            }
+            input {
+            }
+		}
+
+	}
+}
+
+@media only screen and (max-width: 1277px) {
+  .DashboardMenu {
+    nav {
+      .navbar-inner {
+        margin:0px;
+        padding:0px;
+        input {
+          font-size:75%;
+          width: 110px;
+        }
+        a  {
+          font-size:75%;
+        }
+
+      }
+
+    }
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .DashboardMenu {
+    nav {
+      .navbar-inner {
+        margin:0px;
+        padding:0px;
+        li {
+          a  {
+            font-size:60%;
+            padding-left:9px;
+            padding-right:9px;
+          }
+
+        }
+        input {
+          font-size:60%;
+          width: 70px;
+        }
+
+
+
+      }
+
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .DashboardMenu {
+    nav {
+      .navbar-inner {
+        input {
+          font-size:100%;
+          width: 100%;
+        }
+        li {
+          a {
+            font-size:100%;
+            padding-left:15px;
+            padding-right:15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+body { 
+		padding-top : 50px;
+}
